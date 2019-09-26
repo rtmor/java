@@ -15,6 +15,9 @@ import java.util.Scanner;
 
 public class l_3_4 {
 
+    private static Scanner input = new Scanner(System.in);
+    private static Scanner input2 = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         getMenu();
@@ -23,7 +26,6 @@ public class l_3_4 {
 
     static void getMenu() {
 
-        Scanner input = new Scanner(System.in);
         String idNumber;
 
         System.out.println("\nEmployee Contact Database");
@@ -34,29 +36,29 @@ public class l_3_4 {
                           "\nEnter 'r' to read existing user"+
                           "\n\n>>> ");
 
-        char choice = input.next().charAt(0);
+        char choice = input2.next().charAt(0);
 
         switch(choice) {
             case 'i':
                 System.out.print("\nEnter ID of User to Create: ");
-                idNumber = input.next();
+                idNumber = input2.next();
                 insertUser(idNumber);
                 break;
             case 'u':
                 System.out.print("\nEnter ID Number to Update: ");
-                idNumber = input.next();
+                idNumber = input2.next();
                 deleteUser(idNumber);
                 insertUser(idNumber);
                 break;
             case 'd':
                 System.out.print("\nEnter ID Number to Delete: ");
-                idNumber = input.next();
+                idNumber = input2.next();
                 deleteUser(idNumber);
                 getMenu();
                 break;
             case 'r':
                 System.out.print("\nEnter ID Number to Read: ");
-                idNumber = input.next();
+                idNumber = input2.next();
                 readUser(idNumber);
                 break;
             default:
@@ -65,7 +67,7 @@ public class l_3_4 {
                 break;
         }
 
-    }
+    } 
 
     private static void readUser(String idNumber) {
 
@@ -105,8 +107,6 @@ public class l_3_4 {
 
 
     private static void insertUser(String idNumber) {
-
-        Scanner input = new Scanner(System.in);
 
         String id = idNumber;
         System.out.print("Please provide user firstname: ");

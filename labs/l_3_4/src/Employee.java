@@ -11,15 +11,13 @@ public class Employee implements Serializable {
     private String lastName;
     private String phoneNumber;
 
-    transient private Thread myThread;
-
     public Employee(String idNumber, String firstName, String lastName, String phoneNumber) {
 
         this.idNumber = idNumber;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.myThread = new Thread();
+        new Thread();
     }
 
     public Employee() {
