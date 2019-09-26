@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - mortgage",
+            "request": "launch",
+            "mainClass": "mortgage",
+            "projectName": "mortgage"
+        }
+    ]
+}
