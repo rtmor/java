@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 /**
@@ -38,15 +40,21 @@ public class h_3_1 {
             String content1 = input1.readLine();
             String content2 = input2.readLine();
             
-            while(content1 != null && content2 != null) {
-                if(!content1.equalsIgnoreCase(content2)) {
-                    input1.close();
-                    input2.close();
-                    return false;
-                } else {
-                    content1 = input1.readLine();
-                    content2 = input2.readLine();
+            if (Files.lines(Paths.get(file1)).count() == Files.lines(Paths.get(file2)).count()) {
+                while (content1 != null && content2 != null) {
+                    if (!content1.equalsIgnoreCase(content2)) {
+                        input1.close();
+                        input2.close();
+                        return false;
+                    } else {
+                        content1 = input1.readLine();
+                        content2 = input2.readLine();
+                    }
                 }
+            } else {
+                input1.close();
+                input2.close();
+                return false;
             }
 		} catch (IOException e) {
 			System.out.println("Error: The file(s) do not exist");
