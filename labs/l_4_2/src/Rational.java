@@ -1,3 +1,4 @@
+// test
 public class Rational {
     // data
     private int num;
