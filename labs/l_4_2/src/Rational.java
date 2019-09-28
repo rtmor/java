@@ -7,7 +7,7 @@ public class Rational {
     // constructors
     /**
      * Constructs a Rational from a numerator and denominator
-     *
+    
      * @param n the numerator
      * @param d the denominator
      */
