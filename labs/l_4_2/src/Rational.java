@@ -1,5 +1,3 @@
-import java.lang.reflect.Method;
-
 public class Rational {
     // data
     private int num;
