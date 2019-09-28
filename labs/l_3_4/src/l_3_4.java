@@ -11,7 +11,6 @@ import java.util.Scanner;
  * phone number. The program should store all information in a text file and
  * should allow you to insert, update, and delete employees.
  */
-    
 
 public class l_3_4 {
 
@@ -21,7 +20,7 @@ public class l_3_4 {
     public static void main(String[] args) {
 
         getMenu();
-        //test
+        // test
     }
 
     static void getMenu() {
@@ -30,44 +29,41 @@ public class l_3_4 {
 
         System.out.println("\nEmployee Contact Database");
         System.out.println("-------------------------");
-        System.out.printf("Enter 'i' to insert"+
-                          "\nEnter 'u' to update existing"+
-                          "\nEnter 'd' to delete existing"+
-                          "\nEnter 'r' to read existing user"+
-                          "\n\n>>> ");
+        System.out.printf("Enter 'i' to insert" + "\nEnter 'u' to update existing" + "\nEnter 'd' to delete existing"
+                + "\nEnter 'r' to read existing user" + "\n\n>>> ");
 
         char choice = input2.next().charAt(0);
 
-        switch(choice) {
-            case 'i':
-                System.out.print("\nEnter ID of User to Create: ");
-                idNumber = input2.next();
-                insertUser(idNumber);
-                break;
-            case 'u':
-                System.out.print("\nEnter ID Number to Update: ");
-                idNumber = input2.next();
-                deleteUser(idNumber);
-                insertUser(idNumber);
-                break;
-            case 'd':
-                System.out.print("\nEnter ID Number to Delete: ");
-                idNumber = input2.next();
-                deleteUser(idNumber);
-                getMenu();
-                break;
-            case 'r':
-                System.out.print("\nEnter ID Number to Read: ");
-                idNumber = input2.next();
-                readUser(idNumber);
-                break;
-            default:
-                System.out.println("\nInvalid Choice");
-                getMenu();
-                break;
+        switch (choice) {
+        case 'i':
+            System.out.print("\nEnter ID of User to Create: ");
+            idNumber = input2.next();
+            insertUser(idNumber);
+            break;
+        case 'u':
+            System.out.print("\nEnter ID Number to Update: ");
+            idNumber = input2.next();
+            deleteUser(idNumber);
+            insertUser(idNumber);
+            break;
+        case 'd':
+            System.out.print("\nEnter ID Number to Delete: ");
+            idNumber = input2.next();
+            deleteUser(idNumber);
+            getMenu();
+            break;
+        case 'r':
+            System.out.print("\nEnter ID Number to Read: ");
+            idNumber = input2.next();
+            readUser(idNumber);
+            break;
+        default:
+            System.out.println("\nInvalid Choice");
+            getMenu();
+            break;
         }
 
-    } 
+    }
 
     private static void readUser(String idNumber) {
 
@@ -94,17 +90,16 @@ public class l_3_4 {
         File file = new File(idNumber);
 
         try {
-            if(file.delete()){
+            if (file.delete()) {
                 System.out.println("\nUser Successfully Deleted");
             } else {
                 System.out.println("\nEmployee Not Found");
             }
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             System.out.println("\nEmployee Not Found");
             ex.printStackTrace();
         }
     }
-
 
     private static void insertUser(String idNumber) {
 
@@ -118,7 +113,7 @@ public class l_3_4 {
         Employee e = new Employee(id, first, last, phone);
         write(e);
         getMenu();
-        
+
     }
 
     private static void write(Employee e) {
@@ -134,7 +129,7 @@ public class l_3_4 {
             out.writeObject(e);
             System.out.println("\nObject Successfully Writen to File");
             out.close();
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
