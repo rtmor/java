@@ -69,6 +69,7 @@ public class Date {
      * if year > 1900 and number of
      * days <= max days per month of year
      * @return dateString 
+     * @exception e checks for leap year; exceeded days per month
      */
     public String date2String() {
 
@@ -82,8 +83,7 @@ public class Date {
                 dateString = month2String(getMonth()) + " " + getDay() + ", " + getYear();
             }
         } catch (DateTimeException e) {
-            dateString = getDay() + " exceeds number of days in " + month2String(getMonth()) + " of " + getYear();
-            e.printStackTrace();
+            return e.getMessage();
 
         }
         return dateString;
