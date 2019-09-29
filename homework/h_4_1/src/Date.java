@@ -3,7 +3,8 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 
 /**
- * Date.java
+ * @Date.java
+ * @author Ryan T. Moran
  * 
  * H.4.1: Create a class that stores the current date. Add fields for day,
  * month, and year. Add getters and setters for all fields. Add a toString to
@@ -21,6 +22,14 @@ public class Date {
     private int month;
     private int year;
 
+    /**
+     * Date Constructor
+     * transforms @param month,day,year to int
+     * because of LocalDate return type {@link #main}
+     * @param month
+     * @param day
+     * @param year
+     */
     public Date(String month, String day, String year) {
 
         this.day = Integer.parseInt(day);

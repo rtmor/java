@@ -11,6 +11,8 @@ import java.time.format.DateTimeFormatter;
  * not be allowed, but February 29th should be allowed in leap years). For year,
  * validate that the year is greater than 1900. Create a main which thoroughly
  * tests all of the functionality of your class including validation.
+ * 
+ * @author Ryan T. Moran
  */
 public class h_4_1 {
 
