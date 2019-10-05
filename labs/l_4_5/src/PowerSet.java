@@ -39,6 +39,7 @@ public class PowerSet {
                 result.add(new ArrayList<>(Arrays.asList(element)));
             }
         }
+        result.add(new ArrayList<>());
         return result;
     }
 }

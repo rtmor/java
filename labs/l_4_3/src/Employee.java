@@ -19,7 +19,6 @@ public class Employee implements Serializable {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        new Thread();
     }
 
     public Employee() {
