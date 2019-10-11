@@ -20,8 +20,8 @@ public class BlackJack {
 
             // Get random input values
             String dCard = cards[shuffler.nextInt(cards.length)];
-            String pCard1 = cards[shuffler.nextInt(cards.length)];
-            String pCard2 = cards[shuffler.nextInt(cards.length)];
+            String pCard1 = "A";//cards[shuffler.nextInt(cards.length)];
+            String pCard2 = "A";//cards[shuffler.nextInt(cards.length)];
 
             // Output the cards dealt
             System.out.printf("Your hand: %s %s with Dealer showing: %s\n", pCard1, pCard2, dCard);
@@ -212,7 +212,7 @@ public class BlackJack {
                 break;
             }
             case 3: {
-                if (cardsum == 21 || cardsum == 16 || cardsum == 18 || cardsum == 14 || cardsum == 12) {
+                if (cardsum == 22 || cardsum == 16 || cardsum == 18 || cardsum == 14 || cardsum == 12) {
                     output = "Split";
                 } else if (cardsum == 20) {
                     output = "Stand";
@@ -226,7 +226,7 @@ public class BlackJack {
             case 4:
             case 5:
             case 6: {
-                if (cardsum == 21 || cardsum == 16 || cardsum == 18 || cardsum == 14 || cardsum == 12 || cardsum == 6
+                if (cardsum == 22 || cardsum == 16 || cardsum == 18 || cardsum == 14 || cardsum == 12 || cardsum == 6
                         || cardsum == 4) {
                     output = "Split";
                 } else if (cardsum == 20) {

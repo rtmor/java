@@ -19,10 +19,11 @@ public class TimeMachine {
         String location = "https://www.gutenberg.org/files/35/35.txt";
         String line;
         ArrayList<String> collection = new ArrayList<String>();
+        BufferedReader text = null;
 
         try {
             URL url = new URL(location);
-            BufferedReader text = new BufferedReader(new InputStreamReader(url.openStream()));
+            text = new BufferedReader(new InputStreamReader(url.openStream()));
 
             while ((line = text.readLine()) != null) {
                 String[] words;
@@ -34,19 +35,20 @@ public class TimeMachine {
                 }
             }
 
-            text.close();
-
-            testCollection();
-
-/* 
             mergeSort(collection);
 
             System.out.println(collection);
-            System.out.println(collection.size()); */
+            System.out.println(collection.size());
 
         } catch (IOException ex) {
             ex.printStackTrace();
-        } 
+        } finally {
+            try {
+                text.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**

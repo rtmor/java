@@ -1,92 +1,121 @@
-import java.util.ArrayList;
+import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Queens
  */
 public class Queens {
 
-    private int n;
+    private int boardSize;
+    private int count = 1;
+    private static Scanner input = new Scanner(System.in);
 
-    /**
-     * @param n
-     */
-    public Queens(int n) {
-        this.n = n;
+    public static void main(String[] args) throws IOException {
+
+        System.out.print("Enter Number of Queens: ");
+
+        Queens q = new Queens(input.nextInt());
+
+        q.solve();
+
+        input.close();
     }
 
     /**
-     * @return the n
+     * @param boardSize Constructor
      */
-    public int getN() {
-        return n;
+    public Queens(int boardSize) {
+        setBoardSize(boardSize);
     }
 
     /**
-     * @param n the n to set
+     * @return the boardSize
      */
-    public void setN(int n) {
-        this.n = n;
+    public int getBoardSize() {
+        return boardSize;
     }
 
-    public ArrayList<ArrayList<String>> solveNQueens() {
-        ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
-        int n = this.getN();
-        if (n < 1)
-            return result;
-        int[] queens = new int[n];
-        enumerate(queens, 0, result);
-        return result;
+    /**
+     * @param boardSize the boardSize to set
+     */
+    public void setBoardSize(int boardSize) {
+        this.boardSize = boardSize;
     }
 
-    public void enumerate(int[] queens, int n, ArrayList<ArrayList<String>> result) {
-        int N = queens.length;
+    void printBoard(int board[][]) {
 
-        if (n == N)
-            addQueensToResult(queens, result);
-        else {
-            for (int i = 0; i < N; i++) {
-                System.out
-                        .println("****************For row = " + i + " place queens[" + n + "] = " + i + "***********");
-                queens[n] = i;
-                if (isConsistent(queens, n))
-                    enumerate(queens, n + 1, result);
+        System.out.printf("\n%d.\n", count++);
+        for (int i = 0; i < getBoardSize(); i++) {
+            for (int j = 0; j < getBoardSize(); j++) {
+                System.out.print(" " + board[i][j] + " ");
             }
+            System.out.println();
         }
     }
 
-    public boolean isConsistent(int[] queens, int n) {
-        for (int i = 0; i < n; i++) {
-            System.out.printf("queens[%d] = %d and queens[%d] = %d \n", i, n, queens[i], queens[n]);
-            if (queens[i] == queens[n]) { // same column
-                System.out.println("\t Same Column");
-                return false;
-            }
-            if ((queens[i] - queens[n]) == (n - i)) {// same major diagonal
-                System.out.println("\t Same major diagonal");
-                return false;
-            }
-            if ((queens[n] - queens[i]) == (n - i)) {// same minor diagonal
-                System.out.println("\t Same minor diagonal");
+    boolean safeCheck(int board[][], int row, int col) {
+
+        int i, j;
+
+        // horizontal check
+        for (i = 0; i < col; i++) {
+            if (board[row][i] == 1) {
                 return false;
             }
         }
-        System.out.println("\t Is consistent so enumerate " + (n + 1));
+
+        // diagonal (negative slope) check
+        for (i = row, j = col; i >= 0 && j >= 0; i--, j--) {
+            if (board[i][j] == 1) {
+                return false;
+            }
+        }
+
+        // diagonal (positive slope) check
+        for (i = row, j = col; j >= 0 && i < getBoardSize(); i++, j--) {
+            if (board[i][j] == 1) {
+                return false;
+            }
+        }
+
         return true;
+
     }
 
-    public void addQueensToResult(int[] queens, ArrayList<ArrayList<String>> result) {
-        int N = queens.length;
-        ArrayList<String> temp = new ArrayList<String>();
-        for (int i = 0; i < N; i++) {
-            String row = "";
-            for (int j = 0; j < N; j++) {
-                if (queens[i] == j)
-                    row += "Q";
-                else
-                    row += ".";
-            }
-            temp.add(row);
+    boolean solveRecursive(int board[][], int col) {
+
+        // if column manages to increment to board size (END)
+        // print solution
+        if (col == getBoardSize()) {
+            printBoard(board);
+            return true;
         }
-        result.add(temp);
+
+        boolean resume = false;
+
+        // test all possible rows of a column
+        for (int i = 0; i < getBoardSize(); i++) {
+            if (safeCheck(board, i, col)) {
+                board[i][col] = 1;
+                // continue to next column
+                resume = solveRecursive(board, col + 1) || false ;
+                // backtrack (remove queen)
+                board[i][col] = 0;
+            }
+        }
+        return resume;
+    }
+
+    void solve() {
+
+        int[][] board = new int[this.getBoardSize()][this.getBoardSize()];
+
+        // begin at column 0
+        if (solveRecursive(board, 0) == false) {
+            return;
+        }
+
+        printBoard(board);
+        return;
     }
 }
