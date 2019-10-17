@@ -64,6 +64,9 @@ public class h_3_2 {
             System.out.println("Array lengths incompatible");
         }
 
+        br1.close();
+        br2.close();
+        br3.close();
 
     }
 
