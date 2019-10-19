@@ -36,7 +36,7 @@ public class Addition implements Expression {
      * @return int
      */
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return this.getLeft().evaluate() + this.getRight().evaluate();
     }
 

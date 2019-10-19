@@ -11,8 +11,8 @@ public class Exponent implements Expression {
 	}
 
     @Override
-    public int evaluate() {
-        return (int) Math.pow(value.evaluate(), exponent);
+    public double evaluate() {
+        return Math.pow(value.evaluate(), exponent);
     }
 
     /** 

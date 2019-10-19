@@ -61,7 +61,7 @@ public abstract class AbstractSuperHero implements Comparable<AbstractSuperHero>
 
 		}
 		// create own instance of Scanner
-		UserInput input = new UserInput(System.in);
+		java.util.Scanner input = new java.util.Scanner(System.in);
 		System.out.println("Enter something: ");
 		System.out.println(input.nextLine());
 	}

@@ -1,14 +1,14 @@
 
 public class Negate implements Expression {
 
-    private final Constant value;
+    private final Expression value;
 
-    public Negate(Constant constant) {
+    public Negate(Expression constant) {
         this.value = constant;
     }
 
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return value.evaluate() * -1;
     }
 
@@ -19,7 +19,7 @@ public class Negate implements Expression {
 
     @Override
     public String toString() {
-        return String.format(" %s  ", -1);
+        return String.format(" - ( %s )  ", value.toString());
     }
 
 }

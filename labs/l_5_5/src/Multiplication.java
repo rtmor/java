@@ -17,15 +17,15 @@ public class Multiplication implements Expression {
 	}
 
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return value1.evaluate() * value2.evaluate();
     }
 
-    public int getLeft() {
+    public double getLeft() {
         return value1.evaluate();
     }
 
-    public int getRight() {
+    public double getRight() {
         return value2.evaluate();
     }
 

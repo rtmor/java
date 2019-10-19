@@ -4,12 +4,12 @@
 public class Subtraction extends Addition {
 
     public Subtraction(Expression left, Expression right) {
-        super(left, new Multiplication(right, new Negate(new Constant(2))));
+        super(left, new Negate(right));
     }
 
     @Override
     public String toString() {
-        return super.toString().replace("+", "-");
+        return super.toString().replace("+", "");
     }
 
     

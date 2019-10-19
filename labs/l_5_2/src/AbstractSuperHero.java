@@ -2,7 +2,7 @@ import java.util.*;
 
 public abstract class AbstractSuperHero implements Comparable<AbstractSuperHero> {
 
-	private static UserInput input = new UserInput(System.in);
+	private static Scanner input = new Scanner(System.in);
 
 	/**
 	 * @param args

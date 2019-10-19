@@ -12,7 +12,7 @@ public class Constant implements Expression {
     }
 
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return this.value;
     }
 
