@@ -12,7 +12,6 @@ public class run {
     public static void main(String[] args) {
         
         List<ToolbeltHero> ashList = new ArrayList<ToolbeltHero>();
-		ToolbeltHero hero = null;
 		ashList.add(new Batman());
 		ashList.add(new MarthaStewart());
         ashList.add(new VaccuumMan());
