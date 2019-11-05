@@ -1,16 +1,26 @@
+import java.text.DecimalFormat;
+
 /**
  * Calculate
  */
 public class Calculate {
 
-    public float getCalculate(long number1, long number2, String operand) {
+    private static DecimalFormat df = new DecimalFormat("#.##");
 
-        switch (operand) {
-        case "+": {
-            return number1 + number2;
+    public double getCalculate(double number1, double number2, String operand) {
+
+        switch (operand.charAt(0)) {
+        case '+': {
+            return Double.parseDouble(df.format(number1 + number2));
             }
-        case "-": {
-            return number1 - number2;
+        case '-': {
+            return Double.parseDouble(df.format(number1 - number2));
+        }
+        case 'x': {
+            return (number1 * number2);
+        }
+        case '/': {
+            return (number1 / number2);
         }
         default:
             return 0;

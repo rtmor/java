@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * L.1.4: For any side or hypotenuse of a right triangle of size greater than 1
  * but less than or equal to 500, print a table of Pythagorean triples (with
@@ -9,6 +11,7 @@ public class l_1_4 {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> check = new ArrayList<Integer>();
         int a, b, c = 0;
         int limit = 500;
         int m = 2;
@@ -22,10 +25,25 @@ public class l_1_4 {
                 b = 2 * m * n;
                 c = m * m + n * n;
 
-                if (c > limit) {
-                    break;
+                for (int k = 1; c <= limit; k++) {
+
+                    int tA = a;
+                    int tB = b;
+                    int tC = c;
+
+                    tA *= k;
+                    tB *= k;
+                    tC *= k;
+
+                    if (tC > limit) {
+                        break;
+                    } else {
+                        if (!check.contains(tA * tB * tC - (tA + tB))) {
+                            System.out.format("%-7d %-7d %-7d\n", tA, tB, tC);
+                            check.add(tA * tB * tC - (tA - tB));
+                        }
+                    }
                 }
-                System.out.format("%-7d %-7d %-7d\n", a, b, c);
             }
             m++;
         }

@@ -10,7 +10,7 @@ public class CalculatorController {
 
     @FXML
     private Label result;
-    private long number1 = 0;
+    private Double number1;
     private String operator = "";
     private Boolean start = true;
     private Calculate calculate = new Calculate();
@@ -38,14 +38,14 @@ public class CalculatorController {
                 return;
            } 
             operator = value;
-            number1 = Long.parseLong(result.getText());
-            result.setText("");
+            number1 = Double.parseDouble(result.getText());
+            result.setText(result.getText() + operator);
         } else {
             if (operator.isEmpty()) {
                 return;
             } 
-            long number2 = Long.parseLong(result.getText());
-            float output = calculate.getCalculate(number1, number2, operator);
+            double number2 = Double.parseDouble(result.getText().split("[x/+-]")[1]);
+            double output = calculate.getCalculate(number1, number2, operator);
             result.setText(String.valueOf(output));
             operator = "";
             start = true;

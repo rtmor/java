@@ -28,7 +28,7 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -52,7 +52,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="18.0" layoutY="184.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="+/-" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="18.0" layoutY="184.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="+/-" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -60,7 +60,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="18.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="18.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -68,7 +68,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="101.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="101.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -92,7 +92,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="101.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="101.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -100,7 +100,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="192.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="192.0" layoutY="184.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -116,7 +116,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="dot" alignment="CENTER" layoutX="174.0" layoutY="204.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button fx:id="dot" alignment="CENTER" layoutX="174.0" layoutY="204.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="55.0" prefWidth="60.0" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -124,7 +124,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="174.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="÷" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="174.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -132,7 +132,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="×" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="x" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -140,7 +140,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -148,7 +148,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="256.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -156,20 +156,12 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="204.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="256.0" layoutY="204.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
       </Button>
-      <Button layoutX="338.0" layoutY="204.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="CE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-         <effect>
-            <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
-         </effect>
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Button>
-      <Button fx:id="equal" defaultButton="true" layoutX="338.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="=" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button alignment="CENTER" layoutX="338.0" layoutY="204.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="CE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -177,7 +169,15 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="282.0" layoutY="255.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="√" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button fx:id="equal" alignment="CENTER" defaultButton="true" layoutX="338.0" layoutY="204.0" mnemonicParsing="false" onAction="#getOperand" prefHeight="55.0" prefWidth="60.0" text="=" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="282.0" layoutY="255.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="√" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -190,7 +190,7 @@
             <Image url="@../../../../Pictures/Kinnsley/20170429_013842.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="openBracket" layoutX="208.0" layoutY="191.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="(" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="openBracket" alignment="CENTER" layoutX="208.0" layoutY="191.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text="(" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>
@@ -198,7 +198,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="closeBracket" layoutX="208.0" layoutY="191.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text=")" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="closeBracket" alignment="CENTER" layoutX="208.0" layoutY="191.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" text=")" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" height="1.93" radius="3.4475" width="13.86" />
          </effect>

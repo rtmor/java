@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - l_6_4",
+            "request": "launch",
+            "mainClass": "l_6_4",
+            "projectName": "l_6_4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hypotenuse",
+            "request": "launch",
+            "mainClass": "Hypotenuse",
+            "projectName": "l_6_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TipCalculator",
+            "request": "launch",
+            "mainClass": "TipCalculator",
+            "projectName": "l_6_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - l_6_1",
+            "request": "launch",
+            "mainClass": "l_6_1",
+            "projectName": "l_6_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - l_4_5",
             "request": "launch",
             "mainClass": "l_4_5",

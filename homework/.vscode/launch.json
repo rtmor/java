@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "h_6_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - h_5_2",
+            "request": "launch",
+            "mainClass": "h_5_2",
+            "projectName": "h_5_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - h_5_1",
+            "request": "launch",
+            "mainClass": "h_5_1",
+            "projectName": "h_5_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - h_4_4",
             "request": "launch",
             "mainClass": "h_4_4",
