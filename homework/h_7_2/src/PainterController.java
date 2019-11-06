@@ -2,9 +2,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
-
 import javax.imageio.ImageIO;
-
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -218,20 +216,20 @@ public class PainterController {
 
     public String retrieveHex() {
 
-		String redValue = Integer.toHexString(0x100 | red).substring(1);
-		String greenValue = Integer.toHexString(0x100 | green).substring(1);
-		String blueValue = Integer.toHexString(0x100 | blue).substring(1);
+        String redValue = Integer.toHexString(0x100 | red).substring(1);
+        String greenValue = Integer.toHexString(0x100 | green).substring(1);
+        String blueValue = Integer.toHexString(0x100 | blue).substring(1);
 
-		/**
-		 * determine alpha value
-		 * hex alpha value x00-xFF (0-255) is proportional to (base 10) 1-100
-		 * (int n * 2.55 + 0.167) linear regression slope that approximates this value
-		 */
-		String alphaValue = Integer.toHexString(0x100 | (int) (alpha * 100 * 2.55 + 0.167)).substring(1);
+        /**
+         * determine alpha value hex alpha value x00-xFF (0-255) is proportional to
+         * (base 10) 1-100 (int n * 2.55 + 0.167) linear regression slope that
+         * approximates this value
+         */
+        String alphaValue = Integer.toHexString(0x100 | (int) (alpha * 100 * 2.55 + 0.167)).substring(1);
 
-		return ("#" + redValue + greenValue + blueValue + alphaValue);
+        return ("#" + redValue + greenValue + blueValue + alphaValue);
 
-	}
+    }
 
     @FXML
     public void closeApplication(ActionEvent event) {
