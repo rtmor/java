@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TipCalculator",
+            "request": "launch",
+            "mainClass": "TipCalculator",
+            "projectName": "h_7_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Painter",
+            "request": "launch",
+            "mainClass": "Painter",
+            "projectName": "h_7_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MountainViewer",
+            "request": "launch",
+            "mainClass": "MountainViewer",
+            "projectName": "h_7_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Calculator",
             "request": "launch",
             "mainClass": "Calculator",

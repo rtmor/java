@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MountainViewer",
+            "request": "launch",
+            "mainClass": "MountainViewer",
+            "projectName": "l_7_5"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ColorChooser",
+            "request": "launch",
+            "mainClass": "ColorChooser",
+            "projectName": "l_7_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Painter",
+            "request": "launch",
+            "mainClass": "Painter",
+            "projectName": "l_7_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - l_6_4",
             "request": "launch",
             "mainClass": "l_6_4",

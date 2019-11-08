@@ -204,7 +204,7 @@ public class PainterController {
                 throw new Exception("The file name must end with \".png\".");
             }
             boolean hasFormat = ImageIO.write(image, "PNG", selectedFile);
-            if (!hasFormat) { // (this should never happen)
+            if (!hasFormat) { 
                 throw new Exception("PNG format not available.");
             }
         } catch (Exception e) {
