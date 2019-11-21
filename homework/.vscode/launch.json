@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RandomText",
+            "request": "launch",
+            "mainClass": "RandomText",
+            "projectName": "h_8_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Gradient",
+            "request": "launch",
+            "mainClass": "Gradient",
+            "projectName": "h_8_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TipCalculator",
             "request": "launch",
             "mainClass": "TipCalculator",

@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FontChooser",
+            "request": "launch",
+            "mainClass": "FontChooser",
+            "projectName": "l_8_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FontsDemo",
+            "request": "launch",
+            "mainClass": "FontsDemo",
+            "projectName": "l_8_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NPoly",
+            "request": "launch",
+            "mainClass": "NPoly",
+            "projectName": "l_8_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShapesDemo",
+            "request": "launch",
+            "mainClass": "ShapesDemo",
+            "projectName": "l_8_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MountainViewer",
             "request": "launch",
             "mainClass": "MountainViewer",

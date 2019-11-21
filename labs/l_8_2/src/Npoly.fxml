@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<SplitPane dividerPositions="0.8366834170854272" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NPolyController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+         <children>
+            <HBox fx:id="polyPane" alignment="CENTER" layoutX="1.0" prefHeight="330.0" prefWidth="598.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Slider fx:id="spinner" blockIncrement="1.0" majorTickUnit="1.0" max="20.0" min="3.0" minorTickCount="17" prefHeight="82.0" prefWidth="276.0" showTickMarks="true" snapToTicks="true" value="3.0" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
