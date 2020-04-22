@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AES_Crypt",
+            "request": "launch",
+            "mainClass": "AES_Crypt",
+            "projectName": "h_12_1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solar",
+            "request": "launch",
+            "mainClass": "Solar",
+            "projectName": "h_9_3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Rectangles",
+            "request": "launch",
+            "mainClass": "Rectangles",
+            "projectName": "h_9_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RandomText",
             "request": "launch",
             "mainClass": "RandomText",

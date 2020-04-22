@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Shadow",
+            "request": "launch",
+            "mainClass": "Shadow",
+            "projectName": "l_9_4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Gradients",
+            "request": "launch",
+            "mainClass": "Gradients",
+            "projectName": "l_9_3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FontChooser",
             "request": "launch",
             "mainClass": "FontChooser",

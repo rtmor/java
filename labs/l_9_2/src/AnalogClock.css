@@ -2,7 +2,6 @@
   -fx-fill: radial-gradient(radius 180%, #3b4252, derive(#3b4252, -30%), derive(#3b4252, 30%));
   -fx-stroke: derive(#3b4252, -45%);
   -fx-stroke-width: 5;
-  -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 4, 4);
 }
 
 #hourHand {

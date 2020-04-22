@@ -61,13 +61,9 @@ public class AlarmClock extends Application {
     private Button resetBtn;
 
     private final Calendar calendar = Calendar.getInstance(Locale.US);
-
     private Timeline delayTimeline, secondTimeline;
-
     private final Label clock = new Label();
-
     private Boolean alarmSet = false;
-
     private int hours, minutes, seconds;
     private int alarmHours, alarmMinutes, alarmSeconds;
     private Map<String, Integer> alarmMap = new TreeMap<String, Integer>();
